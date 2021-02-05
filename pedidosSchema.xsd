@@ -1,0 +1,43 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="pedidos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="pedido">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sucursal">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="ubicacion"/>
+                    <xs:element type="xs:string" name="direccion"/>
+                    <xs:element type="xs:string" name="trabajador"/>
+                    <xs:element type="xs:date" name="fecha"/>
+                    <xs:element type="xs:string" name="observaciones"/>
+                    <xs:element name="articulos">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="articulo">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:byte" name="unidades"/>
+                                <xs:element type="xs:byte" name="precio"/>
+                                <xs:element type="xs:string" name="observaciones"/>
+                                <xs:element type="xs:byte" name="plazo"/>
+                              </xs:sequence>
+                              <xs:attribute type="xs:string" name="codigo"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="codigo"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

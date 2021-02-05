@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+<pedidos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="pedidosSchema.xsd">
+    <pedido>
+        <sucursal codigo = "A1234567">
+            <ubicacion>Ubrique</ubicacion>
+            <direccion>C/ Pabajo 7</direccion>
+            <trabajador>Juan Perez</trabajador>
+            <fecha>2020/11/14</fecha>
+            <observaciones>urgente</observaciones>
+            <articulos>
+                <articulo codigo = "AAA-111">
+                    <unidades>1</unidades>
+                    <precio>20</precio>
+                    <observaciones>"Inserte observacion"</observaciones>
+                    <plazo>20</plazo>
+                    </articulo>
+             </articulos>
+        </sucursal>
+    </pedido>
+</pedidos>
